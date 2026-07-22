@@ -11,6 +11,8 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Camera","folderPath":"folders/Camera.yy","name":"Camera","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Player","folderPath":"folders/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Player/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
@@ -23,7 +25,9 @@
   "name":"GMTK2026GameJam",
   "resources":[
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
+    {"id":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Spr_Player","path":"sprites/Spr_Player/Spr_Player.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
