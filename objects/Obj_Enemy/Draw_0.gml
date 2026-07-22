@@ -1,0 +1,1 @@
+draw_sprite_ext(Spr_Player, 0, x, y, 1, 1, 0, c_green, 1)
