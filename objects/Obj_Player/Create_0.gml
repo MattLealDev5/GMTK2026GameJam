@@ -5,6 +5,7 @@ xPos = x
 yPos = y
 
 hp = 100
+hpMax = 100
 hpDripTimer = 0
 hpDripTimerSet = 30
 hitstunTimer = 0
@@ -16,3 +17,5 @@ walkSpeed = 2
 
 shootTimer = 0
 shootTimerSet = 10
+
+enemyDraining = noone

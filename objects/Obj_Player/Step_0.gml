@@ -17,7 +17,7 @@ yPos = clamp(yPos, 0, room_height)
 
 x = xPos
 y = yPos
-facing = mouseDir < 180 ? 1 : -1
+facing = sign(cos(degtorad(mouseDir)))
 
 // GUN
 if shootTimer > 0 { shootTimer--; }
@@ -34,10 +34,11 @@ if shooting {
 
 // DEATH BY ENEMY
 if hitstunTimer > 0 { hitstunTimer--; }
-if place_meeting(x, y, Obj_Enemy) {
+var enemy = instance_place(x, y, Obj_Enemy)
+if enemy != noone {
 	if hitstunTimer <= 0 {
 		hitstunTimer = hitstunTimerSet
-		hp -= 20 // CHANGE LATER
+		hp -= enemy.damage
 		
 	}
 }

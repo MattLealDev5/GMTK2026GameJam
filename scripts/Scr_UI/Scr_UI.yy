@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Scr_UI",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Scr_UI",
+  "parent":{
+    "name":"Entities",
+    "path":"folders/Entities.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
