@@ -1,4 +1,6 @@
 xPos = 0
 yPos = 0
 
+hp = 30
+
 speed = 1
