@@ -1,1 +1,2 @@
-draw_sprite_ext(Spr_Player, 0, x, y, facing, 1, 0, c_green, 1)
+var color = beingDrained ? c_green : c_white
+draw_sprite_ext(sprite, 0, x, y, facing, 1, 0, color, 1)

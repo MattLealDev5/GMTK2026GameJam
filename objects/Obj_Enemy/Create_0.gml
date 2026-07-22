@@ -5,3 +5,6 @@ hp = 30
 damage = 30
 
 speed = 1
+beingDrained = false
+
+sprite = Spr_Player

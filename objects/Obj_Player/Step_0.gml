@@ -1,7 +1,10 @@
 var horizontal = keyboard_check(ord("D")) - keyboard_check(ord("A"))
 var vertical = keyboard_check(ord("S")) - keyboard_check(ord("W"))
+
 var shooting = mouse_check_button(mb_left)
 var draining = mouse_check_button(mb_right)
+var drainToggle = mouse_check_button_pressed(mb_right)
+
 var pressed = mouse_check_button_pressed(mb_left)
 var mouseDir = point_direction(x, y, mouse_x, mouse_y)
 
@@ -30,7 +33,27 @@ if shooting {
 }
 
 // LIFE DRAIN
-// add code here
+if drainToggle {
+	if enemyDraining != noone {
+		enemyDraining.beingDrained = false
+		enemyDraining = noone
+	}
+	
+	var enemy = instance_position(mouse_x, mouse_y, Obj_Enemy)
+	
+	if enemy != noone {
+		enemyDraining = enemy
+		enemy.beingDrained = true
+	}
+}
+if enemyDraining != noone {
+	enemyDraining.hp--
+	hp++
+	if enemyDraining.hp <= 0 {
+		instance_destroy(enemyDraining)
+		enemyDraining = noone
+	}
+}
 
 // DEATH BY ENEMY
 if hitstunTimer > 0 { hitstunTimer--; }
