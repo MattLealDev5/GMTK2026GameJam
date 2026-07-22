@@ -9,7 +9,31 @@ direction = point_direction(x,y,mouse_x,mouse_y);
 // so keep that in mind for the check (I'd also recommend leaving the upscaling
 // for the part of the code that you use direction in)
 
-var processedDir = floor((direction + 30)/60)*60;
-direction = processedDir;
+var processedDir = floor((direction + 30)/60);
 
-image_angle = direction;
+switch(processedDir){
+	// facing right
+	case 6:
+	case 0:
+		image_index = 0;
+	break
+	case 1:
+		image_index = 1;
+	break
+	case 2:
+		image_index = 2;
+	break
+	case 3:
+		image_index = 3;
+	break
+	case 4:
+		image_index = 4;
+	break
+	case 5:
+		image_index = 5;
+	break
+	
+}
+
+direction = processedDir*60;
+//image_angle = direction;

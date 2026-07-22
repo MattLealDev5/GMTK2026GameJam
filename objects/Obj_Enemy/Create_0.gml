@@ -7,4 +7,4 @@ damage = 30
 speed = 1
 beingDrained = false
 
-sprite = Spr_Player
+sprite = spr_player_temp

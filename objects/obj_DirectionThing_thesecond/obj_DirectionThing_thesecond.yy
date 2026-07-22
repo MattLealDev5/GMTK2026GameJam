@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_DirectionThing",
+  "%Name":"obj_DirectionThing_thesecond",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_DirectionThing",
+  "name":"obj_DirectionThing_thesecond",
   "overriddenProperties":[],
   "parent":{
     "name":"chamber5",
@@ -30,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Player_Hand",
+    "path":"sprites/spr_Player_Hand/spr_Player_Hand.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
