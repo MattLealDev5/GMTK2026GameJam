@@ -1,7 +1,7 @@
 Todo #################################################################################
 * Life drain tweaking
-* Animations playing properly
 * Pixel text display function
 
 Completed ############################################################################
 * Hand aiming thing
+* Animations playing properly
