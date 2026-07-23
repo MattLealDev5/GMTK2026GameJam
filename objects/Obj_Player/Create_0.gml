@@ -19,3 +19,6 @@ shootTimer = 0
 shootTimerSet = 10
 
 enemyDraining = noone
+
+depth = 0
+hand = instance_create_depth(x, y, 0, obj_DirectionThing_theTHIRDone)

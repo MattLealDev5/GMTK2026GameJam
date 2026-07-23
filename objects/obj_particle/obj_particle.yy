@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_DirectionThing_thesecond",
+  "%Name":"obj_particle",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_DirectionThing_thesecond",
+  "name":"obj_particle",
   "overriddenProperties":[],
   "parent":{
-    "name":"chamber5",
-    "path":"folders/Objects/chamber5.yy",
+    "name":"Particles",
+    "path":"folders/Entities/Player/Objects/Particles.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Player_Hand",
-    "path":"sprites/spr_Player_Hand/spr_Player_Hand.yy",
+    "name":"spr_particle",
+    "path":"sprites/spr_particle/spr_particle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

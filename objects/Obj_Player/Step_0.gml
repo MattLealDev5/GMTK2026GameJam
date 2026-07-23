@@ -20,12 +20,15 @@ yPos = clamp(yPos, 0, room_height)
 
 x = xPos
 y = yPos
+hand.x = x
+hand.y = y
 facing = sign(cos(degtorad(mouseDir)))
 
 // GUN
 if shootTimer > 0 { shootTimer--; }
 if shooting {
 	if shootTimer <= 0 {
+		hand.shoot()
 		var bullet = instance_create_layer(x, y, "Instances", Obj_Bullet)
 		bullet.direction = mouseDir
 		shootTimer = shootTimerSet
