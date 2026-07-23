@@ -1,4 +1,4 @@
-#region Taking Damage and Death
+#region Damage, Health, and Death
 function TakeDamage(damage){
 	hp -= damage
 	if hp <= 0 {
@@ -19,5 +19,9 @@ function BleedDamage(damage) {
 function Die() {
 	alive = false
 	instance_destroy(hand)
+}
+
+function GetHeal(heal) {
+	
 }
 #endregion
