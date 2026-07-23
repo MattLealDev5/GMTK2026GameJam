@@ -13,7 +13,7 @@
     {"$GMFolder":"","%Name":"Entities","folderPath":"folders/Entities.yy","name":"Entities","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemy","folderPath":"folders/Entities/Enemy.yy","name":"Enemy","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Chaser","folderPath":"folders/Entities/Enemy/Chaser.yy","name":"Chaser","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"group1","folderPath":"folders/Entities/Enemy/group1.yy","name":"group1","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Bulk","folderPath":"folders/Entities/Enemy/Bulk.yy","name":"Bulk","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Gunner","folderPath":"folders/Entities/Enemy/Gunner.yy","name":"Gunner","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Entities/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Entities/Player/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -37,6 +37,7 @@
   "name":"GMTK2026GameJam",
   "resources":[
     {"id":{"name":"TodoList","path":"notes/TodoList/TodoList.yy",},},
+    {"id":{"name":"Obj_Bulk","path":"objects/Obj_Bulk/Obj_Bulk.yy",},},
     {"id":{"name":"Obj_Bullet","path":"objects/Obj_Bullet/Obj_Bullet.yy",},},
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
     {"id":{"name":"Obj_Chaser","path":"objects/Obj_Chaser/Obj_Chaser.yy",},},
