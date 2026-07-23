@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"Obj_Bulk",
+  "%Name":"obj_shootervisualtestthing",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Obj_Bulk",
+  "name":"obj_shootervisualtestthing",
   "overriddenProperties":[],
   "parent":{
-    "name":"Bulk",
-    "path":"folders/Entities/Enemy/Bulk.yy",
+    "name":"chamber5",
+    "path":"folders/Objects/chamber5.yy",
   },
-  "parentObjectId":{
-    "name":"Obj_Enemy",
-    "path":"objects/Obj_Enemy/Obj_Enemy.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Spr_Bulk",
-    "path":"sprites/Spr_Bulk/Spr_Bulk.yy",
+    "name":"spr_shooter_body",
+    "path":"sprites/spr_shooter_body/spr_shooter_body.yy",
   },
   "spriteMaskId":null,
   "visible":true,

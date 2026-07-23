@@ -1,0 +1,1 @@
+if targetAlly == noone { event_inherited();	exit }

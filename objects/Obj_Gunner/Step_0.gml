@@ -8,3 +8,5 @@ if shootTimer <= 0 {
 	bullet.direction = point_direction(x, y, player.x, player.y)
 	
 }
+
+headAngle += 4;
