@@ -8,3 +8,6 @@ speed = 1
 beingDrained = false
 
 sprite = spr_player_temp
+currFrame = 0
+frames = 1
+frameSpeed = 30

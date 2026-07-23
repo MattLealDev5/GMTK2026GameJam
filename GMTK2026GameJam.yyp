@@ -34,7 +34,7 @@
   },
   "name":"GMTK2026GameJam",
   "resources":[
-    {"id":{"name":"Note1","path":"notes/Note1/Note1.yy",},},
+    {"id":{"name":"TodoList","path":"notes/TodoList/TodoList.yy",},},
     {"id":{"name":"Obj_Bullet","path":"objects/Obj_Bullet/Obj_Bullet.yy",},},
     {"id":{"name":"Obj_Camera","path":"objects/Obj_Camera/Obj_Camera.yy",},},
     {"id":{"name":"Obj_Chaser","path":"objects/Obj_Chaser/Obj_Chaser.yy",},},
@@ -52,6 +52,7 @@
     {"id":{"name":"Scr_UI","path":"scripts/Scr_UI/Scr_UI.yy",},},
     {"id":{"name":"fnt_4by4","path":"sprites/fnt_4by4/fnt_4by4.yy",},},
     {"id":{"name":"spr_chaser","path":"sprites/spr_chaser/spr_chaser.yy",},},
+    {"id":{"name":"spr_necro_crosshair","path":"sprites/spr_necro_crosshair/spr_necro_crosshair.yy",},},
     {"id":{"name":"spr_particle","path":"sprites/spr_particle/spr_particle.yy",},},
     {"id":{"name":"spr_Player_Hand","path":"sprites/spr_Player_Hand/spr_Player_Hand.yy",},},
     {"id":{"name":"spr_player_temp","path":"sprites/spr_player_temp/spr_player_temp.yy",},},
