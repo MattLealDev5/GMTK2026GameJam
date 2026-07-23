@@ -70,12 +70,15 @@ if enemyDraining != noone {
 
 // HIT BY ENEMY
 if hitstunTimer > 0 { hitstunTimer--; }
-var enemy = instance_place(x, y, Obj_Enemy)
-if enemy != noone {
-	if hitstunTimer <= 0 {
-		hitstunTimer = hitstunTimerSet
-		hp -= enemy.damage
-		
+if hitstunTimer <= 0 {
+	var enemy = instance_place(x, y, Obj_Enemy)
+	if enemy != noone {
+		HitDamage(enemy.damage); 
+	} else {
+		var enemyBullet = instance_place(x, y, Obj_EnemyBullet)
+		if enemyBullet != noone {
+			HitDamage(enemyBullet.damage)
+		}
 	}
 }
 

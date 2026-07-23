@@ -1,9 +1,10 @@
 event_inherited()
 
-hp = 50
-damage = 40
-sprite = spr_chaser
+hp = 30
+damage = 30
+sprite = spr_player_temp
 frames = sprite_get_number(sprite)
 frameSpeed = sprite_get_speed(sprite)
 
-speed = 1.5
+shootTimer = 120
+shootTimerSet = 45
