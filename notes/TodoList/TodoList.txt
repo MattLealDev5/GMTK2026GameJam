@@ -1,5 +1,6 @@
 Todo #################################################################################
 * Life drain tweaking
+* Enemy spawn logic
 * Organize code better as functions and all that
 
 Completed ############################################################################

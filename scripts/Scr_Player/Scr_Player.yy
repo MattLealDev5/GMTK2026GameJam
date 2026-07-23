@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Scr_Player",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Scr_Player",
+  "parent":{
+    "name":"Objects",
+    "path":"folders/Entities/Player/Objects.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -4,10 +4,12 @@ facing = 1
 xPos = x
 yPos = y
 
+alive = true
 hp = 100
 hpMax = 100
-hpDripTimer = 0
+hpDripTimer = 30
 hpDripTimerSet = 30
+
 hitstunTimer = 0
 hitstunTimerSet = 60
 

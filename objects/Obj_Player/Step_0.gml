@@ -1,3 +1,5 @@
+if !alive { exit; }
+
 var horizontal = keyboard_check(ord("D")) - keyboard_check(ord("A"))
 var vertical = keyboard_check(ord("S")) - keyboard_check(ord("W"))
 
@@ -37,15 +39,18 @@ if shooting {
 
 // LIFE DRAIN
 if drainToggle {
+	// Enemy that was being drained is set to normal
 	if enemyDraining != noone {
 		enemyDraining.beingDrained = false
+		enemyDraining.speed *= 2
 		enemyDraining = noone
 	}
 	
+	// Set the enemy targeted to be drained
 	var enemy = instance_position(mouse_x, mouse_y, Obj_Enemy)
-	
 	if enemy != noone {
 		enemyDraining = enemy
+		enemy.speed /= 2
 		enemy.beingDrained = true
 	}
 }
@@ -58,7 +63,7 @@ if enemyDraining != noone {
 	}
 }
 
-// DEATH BY ENEMY
+// HIT BY ENEMY
 if hitstunTimer > 0 { hitstunTimer--; }
 var enemy = instance_place(x, y, Obj_Enemy)
 if enemy != noone {
@@ -69,6 +74,8 @@ if enemy != noone {
 	}
 }
 
-
-
-
+// BLEED DAMAGE
+if hpDripTimer > 0 { hpDripTimer--; }
+if hpDripTimer <= 0 {
+	BleedDamage(2)
+}

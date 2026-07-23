@@ -1,0 +1,23 @@
+#region Taking Damage and Death
+function TakeDamage(damage){
+	hp -= damage
+	if hp <= 0 {
+		Die()
+	}
+}
+
+function HitDamage(damage) {
+	TakeDamage(damage)
+	hitstunTimer = hitstunTimerSet
+}
+
+function BleedDamage(damage) {
+	TakeDamage(damage)
+	hpDripTimer = hpDripTimerSet
+}
+
+function Die() {
+	alive = false
+	instance_destroy(hand)
+}
+#endregion
