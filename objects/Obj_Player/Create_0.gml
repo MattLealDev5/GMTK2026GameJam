@@ -7,9 +7,8 @@ yPos = y
 alive = true
 hp = 100
 hpMax = 100
-hpDripTimer = 30
-hpDripTimerSet = 30
-
+hpBleedTimer = 30
+hpBleedTimerSet = 30
 hitstunTimer = 0
 hitstunTimerSet = 60
 
@@ -21,6 +20,8 @@ shootTimer = 0
 shootTimerSet = 10
 
 enemyDraining = noone
+drainTimer = 0
+drainTimerSet = 10
 
 depth = 0
 hand = instance_create_depth(x, y, 0, obj_DirectionThing_theTHIRDone)

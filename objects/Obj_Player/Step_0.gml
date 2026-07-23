@@ -55,11 +55,16 @@ if drainToggle {
 	}
 }
 if enemyDraining != noone {
-	enemyDraining.hp--
-	hp++
-	if enemyDraining.hp <= 0 {
-		instance_destroy(enemyDraining)
-		enemyDraining = noone
+	if drainTimer > 0 { drainTimer--; }
+	if drainTimer <= 0 {
+		enemyDraining.hp--
+		if hp+1 <= hpMax { hp++ }
+		if enemyDraining.hp <= 0 {
+			instance_destroy(enemyDraining)
+			enemyDraining = noone
+		}
+		
+		drainTimer = drainTimerSet
 	}
 }
 
@@ -75,7 +80,9 @@ if enemy != noone {
 }
 
 // BLEED DAMAGE
-if hpDripTimer > 0 { hpDripTimer--; }
-if hpDripTimer <= 0 {
-	BleedDamage(2)
+if enemyDraining == noone {
+	if hpBleedTimer > 0 { hpBleedTimer--; }
+	if hpBleedTimer <= 0 {
+		BleedDamage(2)
+	}
 }

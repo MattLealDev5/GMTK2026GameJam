@@ -13,7 +13,7 @@ function HitDamage(damage) {
 
 function BleedDamage(damage) {
 	TakeDamage(damage)
-	hpDripTimer = hpDripTimerSet
+	hpBleedTimer = hpBleedTimerSet
 }
 
 function Die() {
