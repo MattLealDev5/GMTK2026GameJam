@@ -1,7 +1,8 @@
 Todo #################################################################################
 * Life drain tweaking
-* Pixel text display function
+* Organize code better as functions and all that
 
 Completed ############################################################################
 * Hand aiming thing
 * Animations playing properly
+* Pixel text display function
