@@ -1,5 +1,11 @@
 event_inherited()
 
+hp = 30
+damage = 5
+//sprite = spr_the_magician_guy_you_know_that_guy_right_guys?????
+frames = sprite_get_number(sprite)
+frameSpeed = sprite_get_speed(sprite)
+
 targetAlly = noone
 
 decideTarget = function() {

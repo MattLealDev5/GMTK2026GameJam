@@ -42,7 +42,6 @@ if drainToggle {
 	// Enemy that was being drained is set to normal
 	if enemyDraining != noone {
 		enemyDraining.beingDrained = false
-		enemyDraining.speed *= 2
 		enemyDraining = noone
 	}
 	
@@ -50,7 +49,6 @@ if drainToggle {
 	var enemy = instance_position(mouse_x, mouse_y, Obj_Enemy)
 	if enemy != noone {
 		enemyDraining = enemy
-		enemy.speed /= 2
 		enemy.beingDrained = true
 	}
 }
