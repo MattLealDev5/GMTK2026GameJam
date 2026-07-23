@@ -2,6 +2,8 @@ event_inherited()
 
 hp = 30
 damage = 5
+moveSpeed = 0.75
+drainMoveSpeed = 0.375
 //sprite = spr_the_magician_guy_you_know_that_guy_right_guys?????
 frames = sprite_get_number(sprite)
 frameSpeed = sprite_get_speed(sprite)
@@ -11,6 +13,7 @@ targetAlly = noone
 decideTarget = function() {
 	// Algorithm to determine who the mancer will support
 	// Score works like it does in golf (the lower the better)
+	targetAlly = noone
 
 	var supportHierarchy = [
 		Obj_Bulk,
@@ -20,7 +23,7 @@ decideTarget = function() {
 	]
 	var supportScore = [
 		0,
-		10,
+		25,
 		50,
 		100
 	]
@@ -28,11 +31,14 @@ decideTarget = function() {
 	var candidateScore = 9999999999
 
 	for(var i = 0; i < instance_number(Obj_Enemy); i++) {
-		var enemy = instance_find(Obj_Enemy, 0)
-		if enemy != id { continue }
+		var enemy = instance_find(Obj_Enemy, i)
+		if enemy == id { continue }
 	
 		var enemyIndex = array_get_index(supportHierarchy, enemy.object_index)
-		var enemyScore = point_distance(x, y, enemy.x, enemy.y) + supportScore[enemyIndex]
+		var distanceScore = point_distance(x, y, enemy.x, enemy.y)
+		var enemyScore = distanceScore + supportScore[enemyIndex]
+		show_debug_message(enemy.object_index)
+		show_debug_message($"{distanceScore} + {supportScore[enemyIndex]} = {enemyScore}\n")
 	
 		if enemyScore < candidateScore {
 			candidate = enemy
@@ -43,4 +49,4 @@ decideTarget = function() {
 	targetAlly = candidate
 }
 
-decideTarget()
+alarm[0] = 1

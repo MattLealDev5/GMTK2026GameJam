@@ -15,6 +15,18 @@ frameSpeed = 30
 
 player = instance_find(Obj_Player, 0)
 
+move = function(object = player) {
+	var dir = point_direction(x, y, object.x, object.y)
+	facing = sign(cos(degtorad(dir)))
+	
+	var currSpeed = beingDrained ? drainMoveSpeed : moveSpeed
+	var xSpd =  currSpeed * cos(degtorad(dir))
+	var ySpd = -currSpeed * sin(degtorad(dir))
+
+	x += xSpd
+	y += ySpd	
+}
+
 // V For enemy children V
 //
 //event_inherited()
