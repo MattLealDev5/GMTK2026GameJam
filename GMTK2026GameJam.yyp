@@ -72,6 +72,7 @@
     {"id":{"name":"fnt_4by4","path":"sprites/fnt_4by4/fnt_4by4.yy",},},
     {"id":{"name":"Spr_Bulk","path":"sprites/Spr_Bulk/Spr_Bulk.yy",},},
     {"id":{"name":"spr_chaser","path":"sprites/spr_chaser/spr_chaser.yy",},},
+    {"id":{"name":"spr_clock","path":"sprites/spr_clock/spr_clock.yy",},},
     {"id":{"name":"spr_dot","path":"sprites/spr_dot/spr_dot.yy",},},
     {"id":{"name":"spr_mancer_wave","path":"sprites/spr_mancer_wave/spr_mancer_wave.yy",},},
     {"id":{"name":"spr_mancer","path":"sprites/spr_mancer/spr_mancer.yy",},},

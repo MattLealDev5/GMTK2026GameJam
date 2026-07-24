@@ -7,8 +7,8 @@ if (!instance_exists(targetAlly)) {
 	if point_distance(x, y, targetAlly.x, targetAlly.y) > 32 { move(targetAlly) }
 }
 
-// Ian visual code
 
+// Ian visual code
 
 // creates dark every 8 frames
 if(steps % 8 = 0){
