@@ -60,17 +60,22 @@ if drainToggle {
 	}
 }
 if enemyDraining != noone {
-	if drainTimer > 0 { drainTimer--; }
-	if drainTimer <= 0 {
-		var amount = !enemyDraining.beingBuffed ? 1 : 0
-		enemyDraining.hp -= amount
-		GetHeal(amount)
-		if enemyDraining.hp <= 0 {
-			EnemyDeath(enemyDraining)
-			enemyDraining = noone
-		}
+	if point_distance(x, y, enemyDraining.x, enemyDraining.y) < drainRange {
+		if drainTimer > 0 { drainTimer--; }
+		if drainTimer <= 0 {
+			var amount = !enemyDraining.beingBuffed ? 1 : 0
+			enemyDraining.hp -= amount
+			GetHeal(amount)
+			if enemyDraining.hp <= 0 {
+				EnemyDeath(enemyDraining)
+				enemyDraining = noone
+			}
 		
-		drainTimer = drainTimerSet
+			drainTimer = drainTimerSet
+		}
+	} else {
+		enemyDraining.beingDrained = false
+		enemyDraining = noone
 	}
 }
 

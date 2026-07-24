@@ -19,6 +19,10 @@ function BleedDamage(damage) {
 function Die() {
 	alive = false
 	instance_destroy(hand)
+	
+	with Obj_ScoreManager {
+		submitScore("Jeff Fries", floor(playerScore))
+	}
 }
 
 function GetHeal(heal) {
