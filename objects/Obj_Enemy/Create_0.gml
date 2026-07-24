@@ -13,6 +13,7 @@ sprite = spr_player_temp
 currFrame = 0
 frames = 1
 frameSpeed = 30
+depth = -2
 
 player = instance_find(Obj_Player, 0)
 

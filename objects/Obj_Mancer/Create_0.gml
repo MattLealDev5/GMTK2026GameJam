@@ -7,7 +7,7 @@ drainMoveSpeed = 0.375
 sprite = spr_mancer
 frames = sprite_get_number(sprite)
 frameSpeed = sprite_get_speed(sprite)
-depth = 10
+depth = -1
 
 targetAlly = noone
 
