@@ -9,9 +9,11 @@ frameSpeed = sprite_get_speed(sprite)
 shootTimer = 120
 shootTimerSet = 45
 
-headAngle = 0;
 player = Obj_Player
 
+// Ian visual code
+headAngle = 0;
+steps = 0;
 shoot = function() {
 	var headAngleS = y - 8 + dsin(headAngle);  // also replace this ↓ with the player obj
 	var dirPlayerY = point_direction(x,headAngleS,player.x,player.y)

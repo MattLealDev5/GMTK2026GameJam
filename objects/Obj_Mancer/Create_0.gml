@@ -4,7 +4,7 @@ hp = 30
 damage = 5
 moveSpeed = 0.75
 drainMoveSpeed = 0.375
-//sprite = spr_the_magician_guy_you_know_that_guy_right_guys?????
+sprite = spr_mancer
 frames = sprite_get_number(sprite)
 frameSpeed = sprite_get_speed(sprite)
 
@@ -13,6 +13,9 @@ targetAlly = noone
 decideTarget = function() {
 	// Algorithm to determine who the mancer will support
 	// Score works like it does in golf (the lower the better)
+	if targetAlly != noone && instance_exists(targetAlly) {
+		targetAlly.beingBuffed = false
+	}
 	targetAlly = noone
 
 	var supportHierarchy = [
@@ -47,6 +50,14 @@ decideTarget = function() {
 	}
 
 	targetAlly = candidate
+	if candidate != noone { candidate.beingBuffed = true }
 }
 
 alarm[0] = 1
+
+// Ian visual code
+
+// for counting the frames
+steps = 0;
+
+

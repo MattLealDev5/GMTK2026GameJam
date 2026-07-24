@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_ParticleGenerationAlt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_ParticleGenerationAlt",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

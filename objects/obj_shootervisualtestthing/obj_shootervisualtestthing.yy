@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shooter_body",
-    "path":"sprites/spr_shooter_body/spr_shooter_body.yy",
+    "name":"spr_shooter_body_buffed",
+    "path":"sprites/spr_shooter_body_buffed/spr_shooter_body_buffed.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -7,6 +7,7 @@ damage = 30
 moveSpeed = 1
 drainMoveSpeed = 0.5
 beingDrained = false
+beingBuffed = false
 
 sprite = spr_player_temp
 currFrame = 0
