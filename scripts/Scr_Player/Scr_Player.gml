@@ -22,6 +22,7 @@ function Die() {
 }
 
 function GetHeal(heal) {
-	
+	hp += heal
+	if hp > hpMax { hp = hpMax }
 }
 #endregion

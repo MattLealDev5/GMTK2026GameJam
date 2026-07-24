@@ -3,7 +3,10 @@ array_pop(lastPositions)
 
 var enemy = instance_place(x, y, Obj_Enemy)
 if enemy != noone {
-	enemy.hp -= damage
+	var damageDealt = damage
+	if enemy.beingBuffed { damageDealt *= 0.1 }
+		
+	enemy.hp -= damageDealt
 	if enemy.hp <= 0 {
 		if enemy == Obj_Player.enemyDraining {
 			Obj_Player.enemyDraining = noone

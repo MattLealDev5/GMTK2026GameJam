@@ -62,8 +62,9 @@ if drainToggle {
 if enemyDraining != noone {
 	if drainTimer > 0 { drainTimer--; }
 	if drainTimer <= 0 {
-		enemyDraining.hp--
-		if hp+1 <= hpMax { hp++ }
+		var amount = !enemyDraining.beingBuffed ? 1 : 0
+		enemyDraining.hp -= amount
+		GetHeal(amount)
 		if enemyDraining.hp <= 0 {
 			instance_destroy(enemyDraining)
 			enemyDraining = noone
@@ -88,7 +89,7 @@ if hitstunTimer <= 0 {
 }
 
 // BLEED DAMAGE
-if enemyDraining == noone {
+if enemyDraining == noone || enemyDraining.beingBuffed {
 	if hpBleedTimer > 0 { hpBleedTimer--; }
 	if hpBleedTimer <= 0 {
 		BleedDamage(2)
