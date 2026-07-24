@@ -1,5 +1,3 @@
-event_inherited()
-
 if instance_exists(targetAlly) {
 	// Ian visual code
 	// get the id of the target enemy and put it somewhere to reference here btw ↓
@@ -12,3 +10,5 @@ if instance_exists(targetAlly) {
 		draw_sprite_ext(spr_mancer_wave,0,trueX,trueY,1,1,dirToTarget1,#FFFFFF,1);
 	}
 }
+
+event_inherited()
