@@ -11,7 +11,7 @@ if enemy != noone {
 		if enemy == Obj_Player.enemyDraining {
 			Obj_Player.enemyDraining = noone
 		}
-		instance_destroy(enemy)
+		EnemyDeath(enemy)
 	}
 
 	instance_destroy()

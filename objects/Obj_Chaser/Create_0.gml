@@ -7,3 +7,4 @@ drainMoveSpeed = 0.75
 sprite = spr_chaser
 frames = sprite_get_number(sprite)
 frameSpeed = sprite_get_speed(sprite)
+value = 1

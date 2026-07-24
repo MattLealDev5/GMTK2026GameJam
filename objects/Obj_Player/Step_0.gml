@@ -66,7 +66,7 @@ if enemyDraining != noone {
 		enemyDraining.hp -= amount
 		GetHeal(amount)
 		if enemyDraining.hp <= 0 {
-			instance_destroy(enemyDraining)
+			EnemyDeath(enemyDraining)
 			enemyDraining = noone
 		}
 		

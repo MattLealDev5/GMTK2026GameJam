@@ -5,6 +5,7 @@ damage = 30
 sprite = spr_shooter_body
 frames = sprite_get_number(sprite)
 frameSpeed = sprite_get_speed(sprite)
+value = 2
 
 shootTimer = 120
 shootTimerSet = 45

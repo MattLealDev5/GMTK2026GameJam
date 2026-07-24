@@ -13,7 +13,8 @@ ds_map_destroy(_headers);
 // Store the id so you can match the response later
 get_request_id = _request_id;
 
+
 playerScore = 0
-addPlayerScore = function() {
-	playerScore += 1
+addPlayerScore = function(add) {
+	playerScore += add
 }

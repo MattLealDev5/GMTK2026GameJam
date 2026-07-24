@@ -26,8 +26,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Particles",
-    "path":"folders/Entities/Player/Objects/Particles.yy",
+    "name":"Sprites",
+    "path":"folders/Entities/Player/Objects/Particles/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

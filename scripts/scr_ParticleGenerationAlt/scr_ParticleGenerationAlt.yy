@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scr_ParticleGenerationAlt",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"Particles",
+    "path":"folders/Entities/Player/Objects/Particles.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

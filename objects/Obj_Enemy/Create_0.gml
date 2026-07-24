@@ -13,9 +13,11 @@ sprite = spr_player_temp
 currFrame = 0
 frames = 1
 frameSpeed = 30
+facing = 1
 depth = -2
 
 player = instance_find(Obj_Player, 0)
+value = 1
 
 move = function(object = player) {
 	var dir = point_direction(x, y, object.x, object.y)
