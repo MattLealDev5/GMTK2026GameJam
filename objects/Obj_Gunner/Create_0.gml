@@ -1,4 +1,5 @@
 event_inherited()
+enemyName = "shooter"
 
 hp = 30
 damage = 30
@@ -21,9 +22,9 @@ shoot = function() {
 
 	// makes medium ones
 	scr_ParticleGeneration(x + lengthdir_x(4,dirPlayerY),headAngleS + lengthdir_y(4,dirPlayerY),
-	1.5,dirPlayerY,75,0.5,#FFFFFF,#E60000,#833100,2);
+	"Enemies", 1.5,dirPlayerY,75,0.5,#FFFFFF,#E60000,#833100,2, false);
 
 	// makes small ones
 	scr_ParticleGeneration(x + lengthdir_x(4,dirPlayerY),headAngleS + lengthdir_y(4,dirPlayerY),
-	2.5,dirPlayerY,45,0.25,#FFFFFF,#E60000,#833100,3);
+	"Enemies", 2.5,dirPlayerY,45,0.25,#FFFFFF,#E60000,#833100,3, false);
 }

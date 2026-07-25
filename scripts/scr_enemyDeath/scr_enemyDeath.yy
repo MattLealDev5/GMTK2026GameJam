@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_enemyDeath",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_enemyDeath",
+  "parent":{
+    "name":"Enemy",
+    "path":"folders/Entities/Enemy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

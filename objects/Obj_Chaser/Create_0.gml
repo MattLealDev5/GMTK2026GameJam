@@ -1,4 +1,5 @@
 event_inherited()
+enemyName = "chaser"
 
 hp = 50
 damage = 40

@@ -20,6 +20,8 @@ function Die() {
 	alive = false
 	instance_destroy(hand)
 	
+	scr_enemyDeath("player")
+	
 	with Obj_ScoreManager {
 		//submitScore("Jeff Fries", floor(playerScore))
 	}

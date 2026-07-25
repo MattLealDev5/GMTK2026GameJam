@@ -1,4 +1,5 @@
 event_inherited()
+enemyName = "bulk"
 
 hp = 200
 damage = 60

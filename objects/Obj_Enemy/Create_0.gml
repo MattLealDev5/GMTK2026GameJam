@@ -1,3 +1,5 @@
+enemyName = "enemy"
+
 xPos = 0
 yPos = 0
 
@@ -18,9 +20,10 @@ depth = -2
 
 player = instance_find(Obj_Player, 0)
 value = 1
+dir = 0
 
 move = function(object = player) {
-	var dir = point_direction(x, y, object.x, object.y)
+	dir = point_direction(x, y, object.x, object.y)
 	facing = sign(cos(degtorad(dir)))
 	
 	var currSpeed = beingDrained ? drainMoveSpeed : moveSpeed

@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_ParticleGenerationAlt(X,Y,SPEED,DIRECTION,SPREAD,LIFETIME,COLOR,AMOUNT){
+function scr_ParticleGenerationAlt(X,Y,LAYER,SPEED,DIRECTION,SPREAD,LIFETIME,COLOR,AMOUNT){
 	
 	// btw if you want you can add a variable for
 	// controlling the layer the particle is created in
@@ -9,7 +9,7 @@ function scr_ParticleGenerationAlt(X,Y,SPEED,DIRECTION,SPREAD,LIFETIME,COLOR,AMO
 	
 	randomise();
 	repeat(AMOUNT){
-		with(instance_create_layer(X,Y,"Enemies",obj_particle_spark)){
+		with(instance_create_layer(X,Y,LAYER,obj_particle_spark)){
 			speed = SPEED;
 			direction = DIRECTION;
 			

@@ -1,0 +1,3 @@
+
+// DIE
+instance_destroy();

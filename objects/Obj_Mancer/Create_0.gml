@@ -1,4 +1,5 @@
 event_inherited()
+enemyName = "mancer"
 
 hp = 30
 damage = 5

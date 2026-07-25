@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_ParticleGeneration(X,Y,SPEED,DIRECTION,SPREAD,SCALE,COLOR1,COLOR2,COLOR3,AMOUNT,INSTANT=false){
+function scr_ParticleGeneration(X,Y,LAYER,SPEED,DIRECTION,SPREAD,SCALE,COLOR1,COLOR2,COLOR3,AMOUNT,INSTANT){
 	
 	// btw if you want you can add a variable for
 	// controlling the layer the particle is created in
@@ -9,7 +9,7 @@ function scr_ParticleGeneration(X,Y,SPEED,DIRECTION,SPREAD,SCALE,COLOR1,COLOR2,C
 	
 	randomise();
 	repeat(AMOUNT){
-		with(instance_create_layer(X,Y,"Instances",obj_particle)){
+		with(instance_create_layer(X,Y,LAYER,obj_particle)){
 			speed = SPEED* (0.8 + random(0.4));
 			direction = DIRECTION;
 			

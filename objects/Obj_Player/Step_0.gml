@@ -53,10 +53,10 @@ if drainToggle {
 		
 		// fireworks :D :D :D :D :D :D :D :D :D :D
 		var eX = enemy.x, eY = enemy.y
-		scr_ParticleGeneration(eX, eY,0,0,0,1.5,#FFFFFF,#FFFFFF,#FFFFFF,1,true);
-		scr_ParticleGenerationAlt(eX, eY,3,0,360,40,1,8);
-		scr_ParticleGenerationAlt(eX, eY,4,0,360,50,2,8);
-		scr_ParticleGenerationAlt(eX, eY,5,0,360,60,3,8);
+		scr_ParticleGeneration(eX, eY,"Instances",0,0,0,1.5,#FFFFFF,#FFFFFF,#FFFFFF,1,true);
+		scr_ParticleGenerationAlt(eX, eY,"Instances",3,0,360,40,1,8);
+		scr_ParticleGenerationAlt(eX, eY,"Instances",4,0,360,50,2,8);
+		scr_ParticleGenerationAlt(eX, eY,"Instances",5,0,360,60,3,8);
 	}
 }
 if enemyDraining != noone {
