@@ -11,7 +11,7 @@ if (!instance_exists(targetAlly)) {
 // Ian visual code
 
 // creates dark every 8 frames
-if(steps % 8 = 0){
+if(stepsHead % 8 = 0){
 	repeat(2){
 		scr_ParticleGeneration(x - 2 + round(random(4)),y - 10,"Enemies",1,90,30,0.6,#5B315B,#5B315B,#5B315B,1,false);
 	}
@@ -20,5 +20,5 @@ if(steps % 8 = 0){
 scr_ParticleGeneration(x - 1 + round(random(2)),y - 10,"Enemies",1,90,30,0.3,#E60000,#E60000,#E60000,1,true);
 
 
-steps++;
-if(steps > 32){steps -= 32}
+stepsHead++;
+if(stepsHead > 32){stepsHead -= 32}

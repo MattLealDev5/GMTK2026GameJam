@@ -21,6 +21,7 @@ depth = -2
 player = instance_find(Obj_Player, 0)
 value = 1
 dir = 0
+steps = 0
 
 move = function(object = player) {
 	dir = point_direction(x, y, object.x, object.y)

@@ -6,7 +6,7 @@ var dirToPlayer = point_direction(x,y,player.x,player.y);
 var lengthX = x + lengthdir_x(1,dirToPlayer);
 var lengthY = lengthdir_y(1,dirToPlayer) + headAngleS;
 // Ian visual code
-if !beingBuffed {
+if true { // >:)
 	// da head
 	draw_sprite(spr_shooter_head,0,x,headAngleS);
 

@@ -61,6 +61,6 @@ alarm[0] = 1
 // Ian visual code
 
 // for counting the frames
-steps = 0;
+stepsHead = 0;
 
 

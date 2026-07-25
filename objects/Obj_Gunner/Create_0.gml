@@ -15,7 +15,6 @@ player = Obj_Player
 
 // Ian visual code
 headAngle = 0;
-steps = 0;
 shoot = function() {
 	var headAngleS = y - 8 + dsin(headAngle);  // also replace this ↓ with the player obj
 	var dirPlayerY = point_direction(x,headAngleS,player.x,player.y)
