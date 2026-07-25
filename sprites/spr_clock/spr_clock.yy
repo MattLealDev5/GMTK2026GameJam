@@ -35,7 +35,7 @@
   ],
   "name":"spr_clock",
   "nineSlice":null,
-  "origin":1,
+  "origin":4,
   "parent":{
     "name":"Abilities",
     "path":"folders/Entities/Player/Sprites/Abilities.yy",
@@ -124,7 +124,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":16,
-    "yorigin":0,
+    "yorigin":8,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

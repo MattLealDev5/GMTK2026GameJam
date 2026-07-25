@@ -23,7 +23,7 @@
   ],
   "name":"spr_shooter_body",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"Sprites",
     "path":"folders/Entities/Enemy/Gunner/Sprites.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":8,
-    "yorigin":8,
+    "yorigin":14,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

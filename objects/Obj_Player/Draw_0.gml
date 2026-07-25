@@ -1,6 +1,6 @@
 var clockSize = sprite_get_number(spr_clock)-1
 var clockHour = clockSize*hp/hpMax
-draw_sprite(spr_clock, clockHour, x, y-1)
+draw_sprite(spr_clock, clockHour, x, y)
 
 draw_circle_color(x, y, drainRange, c_black, c_black, true)
 
