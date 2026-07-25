@@ -27,6 +27,13 @@ enemyDraining = noone
 drainTimer = 0
 drainTimerSet = 10
 drainRange = 96
+drainAmount = 6.25
+// 100 over 8 seconds
+// damages twice per second
+// 100 - 16x = 0
+// 100 = 16x
+// 100/16 = x
+// x = 6.25
 
 detach = function() {
 	enemyDraining.beingDrained = false

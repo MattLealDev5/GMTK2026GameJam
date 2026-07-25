@@ -60,22 +60,17 @@ if drainToggle {
 	}
 }
 if enemyDraining != noone {
-	if point_distance(x, y, enemyDraining.x, enemyDraining.y) < drainRange {
-		if drainTimer > 0 { drainTimer--; }
-		if drainTimer <= 0 {
-			var amount = !enemyDraining.beingBuffed ? 1 : 0
-			enemyDraining.hp -= amount
-			GetHeal(amount)
-			if enemyDraining.hp <= 0 {
-				EnemyDeath(enemyDraining)
-				enemyDraining = noone
-			}
-		
-			drainTimer = drainTimerSet
+	if drainTimer > 0 { drainTimer--; }
+	if drainTimer <= 0 {
+		var amount = !enemyDraining.beingBuffed ? 1 : 0
+		enemyDraining.hp -= amount
+		GetHeal(drainAmount)
+		if enemyDraining.hp <= 0 {
+			EnemyDeath(enemyDraining)
+			enemyDraining = noone
 		}
-	} else {
-		enemyDraining.beingDrained = false
-		enemyDraining = noone
+		
+		drainTimer = drainTimerSet
 	}
 }
 
@@ -95,7 +90,7 @@ if hitstunTimer <= 0 {
 
 // BLEED DAMAGE
 if enemyDraining == noone || enemyDraining.beingBuffed {
-	if hpBleedTimer > 0 { hpBleedTimer--; }
+	if hpBleedTimer > 0 { hpBleedTimer-=drainAmount; }
 	if hpBleedTimer <= 0 {
 		BleedDamage(2)
 	}

@@ -3,7 +3,7 @@ if alive {
 	var clockHour = clockSize*hp/hpMax
 	draw_sprite(spr_clock, clockHour, x, y)
 
-	draw_circle_color(x, y, drainRange, c_black, c_black, true)
+	//draw_circle_color(x, y, drainRange, c_black, c_black, true)
 
 	if enemyDraining != noone {
 		draw_line_width_colour(x, y, enemyDraining.x, enemyDraining.y, 4, c_green, c_green)

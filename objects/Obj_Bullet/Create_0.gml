@@ -1,10 +1,7 @@
 speed = 5
 direction = 0
-alarm[0] = 20
+alarm[0] = 30
 
 damage = 20
 
 spriteMain = spr_playerBullet
-
-// for counting frames
-steps = 0;
