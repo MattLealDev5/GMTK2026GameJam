@@ -1,3 +1,5 @@
+if !allowSpawning { exit; }
+
 if timeUntilNextWave > 0 && Obj_Player.alive { timeUntilNextWave--; exit; }
 
 if timeUntilNextWave <= 0 {

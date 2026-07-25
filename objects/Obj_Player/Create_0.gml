@@ -1,5 +1,6 @@
 sprite = Spr_Player
 facing = 1
+allowBleeding = false
 
 xPos = x
 yPos = y

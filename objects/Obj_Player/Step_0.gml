@@ -89,9 +89,11 @@ if hitstunTimer <= 0 {
 }
 
 // BLEED DAMAGE
-if enemyDraining == noone || enemyDraining.beingBuffed {
-	if hpBleedTimer > 0 { hpBleedTimer-=drainAmount; }
-	if hpBleedTimer <= 0 {
-		BleedDamage(2)
+if allowBleeding {
+	if enemyDraining == noone || enemyDraining.beingBuffed {
+		if hpBleedTimer > 0 { hpBleedTimer-=drainAmount; }
+		if hpBleedTimer <= 0 {
+			BleedDamage(2)
+		}
 	}
 }

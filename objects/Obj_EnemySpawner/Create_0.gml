@@ -1,3 +1,5 @@
+allowSpawning = false
+
 credits = 3
 creditBudget = 1
 

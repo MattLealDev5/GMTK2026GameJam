@@ -1,4 +1,5 @@
 topScores = []
+showScores = true
 
 get_request_id = 0
 get_url = "https://fauxclomeorkixhebrux.supabase.co/rest/v1/leaderboard?select=*&order=playerScore.desc&limit=10"

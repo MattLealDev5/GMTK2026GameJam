@@ -1,6 +1,5 @@
-function PixelText(xPos, yPos, text) {
+function PixelText(xPos, yPos, text, scale = 1) {
 	var characters = "0123456789abcdefghijklmnopqrstuvwxyz"
-	var scale = 1
 	var textWidth = sprite_get_width(fnt_4by4)
 	var cursor = 0
 	var newText = string_upper(text)
