@@ -23,7 +23,7 @@ function Die() {
 	scr_enemyDeath("player")
 	
 	with Obj_ScoreManager {
-		//submitScore("Jeff Fries", floor(playerScore))
+		submitScore("Doodoo man", playerScore)
 	}
 }
 
