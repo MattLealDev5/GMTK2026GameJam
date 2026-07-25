@@ -27,7 +27,7 @@ enemyDraining = noone
 drainTimer = 0
 drainTimerSet = 10
 drainRange = 96
-drainAmount = 6.25
+drainAmount = 3.125
 // 100 over 8 seconds
 // damages twice per second
 // 100 - 16x = 0

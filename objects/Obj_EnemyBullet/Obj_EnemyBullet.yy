@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_playerBullet",
-    "path":"sprites/spr_playerBullet/spr_playerBullet.yy",
+    "name":"spr_shooter_projectile",
+    "path":"sprites/spr_shooter_projectile/spr_shooter_projectile.yy",
   },
   "spriteMaskId":null,
   "visible":true,

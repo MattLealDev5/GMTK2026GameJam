@@ -11,6 +11,8 @@ if (async_load[? "id"] == get_request_id) {
         if (_http_status == 200) {
             var _scores = json_parse(_result_str); // array of structs
             show_debug_message(_scores);
+			
+			topScores = _scores
         } else {
             show_debug_message("Error: " + _result_str);
         }

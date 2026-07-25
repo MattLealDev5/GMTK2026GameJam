@@ -1,15 +1,17 @@
+topScores = []
+
 get_request_id = 0
+get_url = "https://fauxclomeorkixhebrux.supabase.co/rest/v1/leaderboard?select=*&order=playerScore.desc&limit=10"
+
 insert_score_request = 0
+post_url = "https://fauxclomeorkixhebrux.supabase.co/rest/v1/leaderboard?select=*"
 
 getScores = function() {
 	var _headers = ds_map_create();
 	ds_map_add(_headers, "Authorization", "Bearer sb_publishable_saHrD5-zGeD8M1kBu5TwEQ_mmjhFCs4");
 	ds_map_add(_headers, "apikey", "sb_publishable_saHrD5-zGeD8M1kBu5TwEQ_mmjhFCs4");
 
-	var _request_id = http_request("https://fauxclomeorkixhebrux.supabase.co/rest/v1/leaderboard?select=*", 
-				 "GET", 
-				 _headers, 
-				 "")
+	var _request_id = http_request(get_url, "GET", _headers, "")
 
 	ds_map_destroy(_headers);
 
@@ -27,10 +29,7 @@ submitScore = function(pName, pScore) {
 	var _body = { playerName: pName, playerScore: $"{pScore}" };
 	var _body_json = json_stringify(_body);
 
-	var _request_id = http_request("https://fauxclomeorkixhebrux.supabase.co/rest/v1/leaderboard?select=*", 
-				 "POST", 
-				 _headers, 
-				 _body_json)
+	var _request_id = http_request(post_url, "POST", _headers, _body_json)
 
 	ds_map_destroy(_headers);
 
