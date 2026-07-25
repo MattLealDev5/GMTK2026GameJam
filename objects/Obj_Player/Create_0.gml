@@ -34,4 +34,4 @@ detach = function() {
 }
 
 depth = 0
-hand = instance_create_depth(x, y, 0, obj_DirectionThing_theTHIRDone)
+hand = instance_create_layer(x, y, "Cursor", obj_DirectionThing_theTHIRDone)
