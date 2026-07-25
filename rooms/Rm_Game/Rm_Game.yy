@@ -13,6 +13,7 @@
     {"name":"inst_4EA42C53","path":"rooms/Rm_Game/Rm_Game.yy",},
     {"name":"inst_4C29FA69","path":"rooms/Rm_Game/Rm_Game.yy",},
     {"name":"inst_352007AE","path":"rooms/Rm_Game/Rm_Game.yy",},
+    {"name":"inst_1B42BC37","path":"rooms/Rm_Game/Rm_Game.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -23,6 +24,7 @@
         {"$GMRInstance":"v4","%Name":"inst_7538B192","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7538B192","objectId":{"name":"Obj_Gunner","path":"objects/Obj_Gunner/Obj_Gunner.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":350.0,"y":300.0,},
         {"$GMRInstance":"v4","%Name":"inst_4C29FA69","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C29FA69","objectId":{"name":"Obj_Bulk","path":"objects/Obj_Bulk/Obj_Bulk.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-50.0,"y":300.0,},
         {"$GMRInstance":"v4","%Name":"inst_352007AE","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_352007AE","objectId":{"name":"Obj_Mancer","path":"objects/Obj_Mancer/Obj_Mancer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-50.0,"y":-50.0,},
+        {"$GMRInstance":"v4","%Name":"inst_1B42BC37","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1B42BC37","objectId":{"name":"obj_DirectionThing_theTHIRDone","path":"objects/obj_DirectionThing_theTHIRDone/obj_DirectionThing_theTHIRDone.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":200.0,"y":100.0,},
       ],"layers":[],"name":"Enemies","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_2C68749F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2C68749F","objectId":{"name":"Obj_Player","path":"objects/Obj_Player/Obj_Player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":96.0,},
