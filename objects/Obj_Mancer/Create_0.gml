@@ -6,6 +6,7 @@ damage = 5
 moveSpeed = 0.75
 drainMoveSpeed = 0.375
 sprite = spr_mancer
+mask_index = sprite
 frames = sprite_get_number(sprite)
 frameSpeed = sprite_get_speed(sprite)
 value = 5

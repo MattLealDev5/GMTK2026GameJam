@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Gunner",
-    "path":"folders/Entities/Enemy/Gunner.yy",
+    "name":"Sprites",
+    "path":"folders/Entities/Enemy/Gunner/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -4,6 +4,7 @@ enemyName = "shooter"
 hp = 30
 damage = 30
 sprite = spr_shooter_body
+mask_index = sprite
 frames = sprite_get_number(sprite)
 frameSpeed = sprite_get_speed(sprite)
 value = 2
