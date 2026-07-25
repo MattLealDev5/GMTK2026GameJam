@@ -21,7 +21,7 @@ function Die() {
 	instance_destroy(hand)
 	
 	with Obj_ScoreManager {
-		submitScore("Jeff Fries", floor(playerScore))
+		//submitScore("Jeff Fries", floor(playerScore))
 	}
 }
 

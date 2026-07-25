@@ -16,13 +16,17 @@ xSpd = 0
 ySpd = 0
 walkSpeed = 2
 
+currFrame = 0
+frames = 2
+frameSpeed = 4
+
 shootTimer = 0
 shootTimerSet = 10
 
 enemyDraining = noone
 drainTimer = 0
 drainTimerSet = 10
-drainRange = 64
+drainRange = 96
 
 detach = function() {
 	enemyDraining.beingDrained = false
