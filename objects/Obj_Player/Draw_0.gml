@@ -46,5 +46,16 @@ if alive {
 	        facing = 1;
 	    break
 	}
-	draw_sprite_ext(sprite, currFrame, x, y, facing, 1, 0, c_white, flashing)
+	
+	// when there's no recoil, this'll be 8 pixels in distance
+	var handRecoil = 5 + (1 - dsin(recoil))*3;
+
+	// to change draw order
+	if(y + lengthdir_y(handRecoil,dir) + 2 < y) {
+		draw_sprite(spr_Player_Hand,Iindex,x + lengthdir_x(handRecoil,dir),y + lengthdir_y(handRecoil,dir));
+		draw_sprite_ext(sprite, currFrame, x, y, facing, 1, 0, c_white, flashing)
+	} else {
+		draw_sprite_ext(sprite, currFrame, x, y, facing, 1, 0, c_white, flashing)
+		draw_sprite(spr_Player_Hand,Iindex,x + lengthdir_x(handRecoil,dir),y + lengthdir_y(handRecoil,dir));
+	}
 }

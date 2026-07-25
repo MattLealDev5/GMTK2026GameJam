@@ -42,4 +42,18 @@ detach = function() {
 }
 
 depth = 0
-hand = instance_create_layer(x, y, "Cursor", obj_DirectionThing_theTHIRDone)
+
+// Ian visual code
+//hand = instance_create_layer(x, y, "Cursor", obj_DirectionThing_theTHIRDone)
+Iindex = 0;
+dir = 0;
+recoil = 0;
+
+crosshairRotation = 0
+handAngle = 0
+
+shoot = function() {
+	recoil = 90;
+	scr_ParticleGeneration(x + lengthdir_x(8,dir),y + lengthdir_y(8,dir),
+	"Instances",2,dir,60,0.5,#FFFFFF,#51FF00,#008300,3,false);
+}

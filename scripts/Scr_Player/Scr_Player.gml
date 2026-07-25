@@ -18,7 +18,7 @@ function BleedDamage(damage) {
 
 function Die() {
 	alive = false
-	instance_destroy(hand)
+	//instance_destroy(hand)
 	
 	scr_enemyDeath("player")
 	

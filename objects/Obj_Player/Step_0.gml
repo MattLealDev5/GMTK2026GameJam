@@ -22,15 +22,15 @@ yPos = clamp(yPos, 0, room_height)
 
 x = xPos
 y = yPos
-hand.x = x
-hand.y = y
+//hand.x = x
+//hand.y = y
 facing = sign(cos(degtorad(mouseDir)))
 
 // GUN
 if shootTimer > 0 { shootTimer--; }
 if shooting {
 	if shootTimer <= 0 {
-		hand.shoot()
+		shoot()
 		var bullet = instance_create_layer(x, y, "Instances", Obj_Bullet)
 		bullet.direction = mouseDir
 		shootTimer = shootTimerSet
@@ -97,3 +97,43 @@ if allowBleeding {
 		}
 	}
 }
+
+
+// Ian visual code
+
+dir = point_direction(x,y,mouse_x,mouse_y);
+
+// rotation value used in the crosshair blades
+crosshairRotation += 1.5;
+if(crosshairRotation > 90){crosshairRotation -= 90}
+
+// falldown for the recoil
+if(recoil > 0){recoil -= 9}
+
+var processedDir = floor((dir + 30)/60);
+
+switch(processedDir){
+	// facing right
+	case 6:
+	case 0:
+		Iindex = 0;
+	break
+	case 1:
+		Iindex = 1;
+	break
+	case 2:
+		Iindex = 2;
+	break
+	case 3:
+		Iindex = 3;
+	break
+	case 4:
+		Iindex = 4;
+	break
+	case 5:
+		Iindex = 5;
+	break
+	
+}
+
+handAngle = point_direction(x,y,mouse_x,mouse_y);
