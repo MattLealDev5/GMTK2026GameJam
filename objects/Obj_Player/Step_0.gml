@@ -103,10 +103,6 @@ if allowBleeding {
 
 dir = point_direction(x,y,mouse_x,mouse_y);
 
-// rotation value used in the crosshair blades
-crosshairRotation += 1.5;
-if(crosshairRotation > 90){crosshairRotation -= 90}
-
 // falldown for the recoil
 if(recoil > 0){recoil -= 9}
 

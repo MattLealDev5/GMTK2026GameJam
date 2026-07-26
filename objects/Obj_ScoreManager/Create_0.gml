@@ -8,6 +8,8 @@ insert_score_request = 0
 post_url = "https://fauxclomeorkixhebrux.supabase.co/rest/v1/leaderboard?select=*"
 
 getScores = function() {
+	topScores = []
+	
 	var _headers = ds_map_create();
 	ds_map_add(_headers, "Authorization", "Bearer sb_publishable_saHrD5-zGeD8M1kBu5TwEQ_mmjhFCs4");
 	ds_map_add(_headers, "apikey", "sb_publishable_saHrD5-zGeD8M1kBu5TwEQ_mmjhFCs4");

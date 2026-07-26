@@ -18,13 +18,26 @@ function BleedDamage(damage) {
 
 function Die() {
 	alive = false
-	//instance_destroy(hand)
 	
 	scr_enemyDeath("player")
 	
-	with Obj_ScoreManager {
-		submitScore("Doodoo man", playerScore)
+	with Obj_Enemy {
+		depth = 100
+		if object_index == Obj_Mancer
+			depth += 1
 	}
+	
+	var i = 0
+	repeat(3) {
+		var xOffset = room_width/2 - 28 + 20*i
+		var yOffset = room_height/2 - 20
+		with instance_create_layer(xOffset, yOffset, "Cursor", Obj_ScoreName) {
+			order = i
+		}
+		i++
+	}
+	
+	instance_create_layer(-999999, -999999, "Cursor", Obj_Submit)
 }
 
 function GetHeal(heal) {

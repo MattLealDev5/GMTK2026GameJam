@@ -15,7 +15,7 @@ hitstunTimerSet = 60
 
 xSpd = 0
 ySpd = 0
-walkSpeed = 2
+walkSpeed = 1.4
 
 currFrame = 0
 frames = 2

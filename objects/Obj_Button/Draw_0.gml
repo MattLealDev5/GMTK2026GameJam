@@ -1,0 +1,1 @@
+draw_sprite(buttonSprite, index, x, y)

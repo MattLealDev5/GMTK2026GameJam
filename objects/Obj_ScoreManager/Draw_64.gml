@@ -2,7 +2,9 @@ if !showScores { exit; }
 
 draw_sprite(spr_title, 0, room_width/2, 16)
 
-PixelText(room_width/2 - 94, room_height/2, "Left Mouse to Start", 2)
+if Obj_Player.alive {
+	PixelText(room_width/2 - 94, room_height/2, "Left Mouse to Start", 2)
+}
 
 var numOfScores = array_length(topScores)
 for(var i = 0; i < 10; i++) {
