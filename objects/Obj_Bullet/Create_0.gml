@@ -7,4 +7,4 @@ damage = 20
 spriteMain = spr_playerBullet
 
 
-Obj_AudioManager.playAudio(Sound.Shooting)
+Obj_AudioManager.playAudio(Sound.shooting)

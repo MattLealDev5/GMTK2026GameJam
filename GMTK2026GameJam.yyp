@@ -85,6 +85,7 @@
     {"id":{"name":"Snd_Button1","path":"sounds/Snd_Button1/Snd_Button1.yy",},},
     {"id":{"name":"Snd_Button2","path":"sounds/Snd_Button2/Snd_Button2.yy",},},
     {"id":{"name":"Snd_ChaserDeath","path":"sounds/Snd_ChaserDeath/Snd_ChaserDeath.yy",},},
+    {"id":{"name":"Snd_DrainStart","path":"sounds/Snd_DrainStart/Snd_DrainStart.yy",},},
     {"id":{"name":"Snd_EnemyDeath1","path":"sounds/Snd_EnemyDeath1/Snd_EnemyDeath1.yy",},},
     {"id":{"name":"Snd_EnemyDeath2","path":"sounds/Snd_EnemyDeath2/Snd_EnemyDeath2.yy",},},
     {"id":{"name":"Snd_EnemyDeath3","path":"sounds/Snd_EnemyDeath3/Snd_EnemyDeath3.yy",},},
