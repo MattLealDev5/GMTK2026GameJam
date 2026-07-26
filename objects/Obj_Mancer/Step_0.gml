@@ -4,7 +4,8 @@ if targetAlly == noone { event_inherited();	exit }
 if (!instance_exists(targetAlly)) {
 	decideTarget()
 } else {
-	if point_distance(x, y, targetAlly.x, targetAlly.y) > 32 { move(targetAlly) }
+	var edge = 48
+	if !collision_rectangle(edge, edge, room_width-edge, room_height-edge, id, false, false) { move(targetAlly) }
 }
 
 
