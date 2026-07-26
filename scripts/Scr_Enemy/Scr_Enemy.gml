@@ -1,9 +1,10 @@
 function EnemyDeath(enemy){
+	var pitch = random_range(0.8, 1.2)
 	if enemy.object_index == Obj_Chaser {
-		Obj_AudioManager.playAudio(Sound.chaserDeath)
+		Obj_AudioManager.playAudio(Sound.chaserDeath, pitch)
 	} else {
-		Obj_AudioManager.playAudio(Sound.enemyDeath1)
-		Obj_AudioManager.playAudio(Sound.enemyDeath2)
+		Obj_AudioManager.playAudio(Sound.enemyDeath1, pitch)
+		Obj_AudioManager.playAudio(Sound.enemyDeath2, pitch)
 	}
 	
 	Obj_ScoreManager.addPlayerScore(enemy.value)

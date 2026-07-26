@@ -48,7 +48,7 @@ if drainToggle {
 	// Set the enemy targeted to be drained
 	var enemy = instance_position(mouse_x, mouse_y, Obj_Enemy)
 	if enemy != noone {
-		Obj_AudioManager.playAudio(Sound.drainStart)
+		Obj_AudioManager.playAudio(Sound.drainStart, random_range(0.8, 1.2))
 		
 		enemyDraining = enemy
 		enemy.beingDrained = true

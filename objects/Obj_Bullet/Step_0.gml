@@ -3,7 +3,7 @@ if enemy != noone {
 	var damageDealt = damage
 	if enemy.beingBuffed { damageDealt *= 0.1 }
 	
-	Obj_AudioManager.playAudio(Sound.enemyHit)
+	Obj_AudioManager.playAudio(Sound.enemyHit, random_range(0.8, 1.2))
 		
 	enemy.hp -= damageDealt
 	
