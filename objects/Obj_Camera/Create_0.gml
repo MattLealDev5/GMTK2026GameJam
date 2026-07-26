@@ -1,6 +1,6 @@
 if instance_number(Obj_Camera) > 1 {instance_destroy(); exit;}
 
-//window_set_cursor(cr_none);
+window_set_cursor(cr_none);
 
 x = 0; y = 0
 	
