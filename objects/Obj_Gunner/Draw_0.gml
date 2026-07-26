@@ -8,7 +8,7 @@ var lengthY = lengthdir_y(1,dirToPlayer) + headAngleS;
 // Ian visual code
 if true { // >:)
 	// da head
-	var color = beingDrained ? c_green : c_white
+	var color = beingDrained ? #51FF00 : c_white
 	draw_sprite_ext(spr_shooter_head,0,x,headAngleS, facing, 1, 0, color, 1);
 
 	// draws eye

@@ -3,7 +3,7 @@ enemyName = "chaser"
 
 hp = 50
 damage = 40
-moveSpeed = 1.5
+moveSpeed = 1.4
 drainMoveSpeed = 0.75
 sprite = spr_chaser
 mask_index = sprite

@@ -1,4 +1,4 @@
-var color = beingDrained ? c_green : c_white
+var color = beingDrained ? #51FF00 : c_white
 
 currFrame += frameSpeed/60
 currFrame %= frames
