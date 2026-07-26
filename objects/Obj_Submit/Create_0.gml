@@ -13,7 +13,9 @@ button_do = function() {
 			}
 			chars[order] = theIndex
 		}
-		var charString = $"{chr(chars[0])}{chr(chars[1])}{chr(chars[2])}"
+		
+		savedName = [chars[0], chars[1], chars[2]]
+		var charString = $"{chr(savedName[0])}{chr(savedName[1])}{chr(savedName[2])}"
 		
 		submitScore(charString, playerScore)
 		showScores = true

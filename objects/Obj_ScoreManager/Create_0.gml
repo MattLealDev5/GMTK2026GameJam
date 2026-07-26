@@ -1,4 +1,5 @@
 topScores = []
+savedName = [0, 0, 0]
 showScores = true
 
 get_request_id = 0

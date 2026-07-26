@@ -33,6 +33,12 @@ function Die() {
 		var yOffset = room_height/2 - 20
 		with instance_create_layer(xOffset, yOffset, "Cursor", Obj_ScoreName) {
 			order = i
+			var getChar = Obj_ScoreManager.savedName[i]
+			if getChar >= ord("0") && getChar <= ord("9") {
+				index = getChar - ord("0")
+			} else if getChar >= ord("A") && getChar <= ord("Z") {
+				index = getChar - ord("A") + 10
+			}
 		}
 		i++
 	}
