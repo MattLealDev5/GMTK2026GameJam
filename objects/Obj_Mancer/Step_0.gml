@@ -63,3 +63,5 @@ if(stepsHead > 32){stepsHead -= 32}
 
 stepsBeam++
 if(stepsBeam > 32){stepsBeam -= 32}
+
+steps++
