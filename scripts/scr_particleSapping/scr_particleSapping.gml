@@ -8,10 +8,10 @@ function scr_particleSapping(){
 	var disToPlayer = point_distance(posX,posY,player.x,player.y)/25;
 	
 	// bigger particles
-	scr_ParticleGeneration(posX,posY,"Instances",disToPlayer,
+	scr_ParticleGeneration(posX,posY,"Cursor",disToPlayer,
 	dirToPlayer,0,0.2*disToPlayer/4,#FFFFFF,#51FF00,#51FF00,1,false);
 	// smaller particles
-	scr_ParticleGeneration(posX,posY,"Instances",disToPlayer/2,
+	scr_ParticleGeneration(posX,posY,"Cursor",disToPlayer/2,
 	dirToPlayer,0,0.4*disToPlayer/4,#FFFFFF,#51FF00,#51FF00,1,false);
 	
 }

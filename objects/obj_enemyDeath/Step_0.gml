@@ -14,8 +14,8 @@ if(sprite_index != spr_player_death){
 	if(steps % 3 = 0){
 		var posX = x + random_range(sprite_width/2 - (sprite_width/8),-sprite_width/2 + (sprite_width/8));
 		var posY = y + random_range(sprite_height/2 - (sprite_height/8),-sprite_height/2 + (sprite_height/8));
-		scr_ParticleGeneration(posX,posY,"Enemies",0,0,0,0.5,otherColor,#000000,#000000,1,true);
-		scr_ParticleGenerationAlt(posX,posY,"Enemies",2,90,20,30,1,1);
+		scr_ParticleGeneration(posX,posY,"Cursor",0,0,0,0.5,otherColor,#000000,#000000,1,true);
+		scr_ParticleGenerationAlt(posX,posY,"Cursor",2,90,20,30,1,1);
 	}
 } else {
 	//spawns the death particles
@@ -23,7 +23,7 @@ if(sprite_index != spr_player_death){
 		var posY = y - 13 + image_index*2;
 		repeat(2){
 			var posX = x + random_range(sprite_width/2 - (sprite_width/6),-sprite_width/2 + (sprite_width/6));
-			scr_ParticleGeneration(posX,posY,"Enemies",1.2,90,0,0.4,#000000,#525252,#949494,1,false);
+			scr_ParticleGeneration(posX,posY,"Cursor",1.2,90,0,0.4,#000000,#525252,#949494,1,false);
 		}
 	}
 	
