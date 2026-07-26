@@ -2,6 +2,10 @@ if player == noone || !player.alive { exit; }
 
 move()
 
+if beingDrained {
+	if(steps % 8 = 0)
+		scr_particleSapping()
+}
 
 
 if beingBuffed {
@@ -20,5 +24,5 @@ if beingBuffed {
 
 	if(steps > 18*42){steps -= 18*42}
 
-	steps++;
 }
+steps++;

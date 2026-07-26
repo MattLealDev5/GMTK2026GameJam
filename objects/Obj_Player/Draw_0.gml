@@ -6,7 +6,7 @@ if alive {
 	//draw_circle_color(x, y, drainRange, c_black, c_black, true)
 
 	if enemyDraining != noone {
-		draw_line_width_colour(x, y, enemyDraining.x, enemyDraining.y, 4, c_green, c_green)
+		draw_line_width_colour(x, y, enemyDraining.x, enemyDraining.y, 1, c_green, c_green)
 		draw_circle_colour(enemyDraining.x, enemyDraining.y, 8, c_green, c_green, false)
 	}
 

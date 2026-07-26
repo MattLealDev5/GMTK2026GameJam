@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_particleSapping",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_particleSapping",
+  "parent":{
+    "name":"Particles",
+    "path":"folders/Entities/Player/Objects/Particles.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
