@@ -1,3 +1,6 @@
+draw_sprite(spr_skull, 0, 2, 2)
+PixelText(12, 2, $"{playerScore}", 2)
+
 if !showScores { exit; }
 
 draw_sprite(spr_title, 0, room_width/2, 16)

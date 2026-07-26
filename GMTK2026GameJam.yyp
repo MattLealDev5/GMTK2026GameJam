@@ -112,6 +112,7 @@
     {"id":{"name":"spr_shooter_head_buffed","path":"sprites/spr_shooter_head_buffed/spr_shooter_head_buffed.yy",},},
     {"id":{"name":"spr_shooter_head","path":"sprites/spr_shooter_head/spr_shooter_head.yy",},},
     {"id":{"name":"spr_shooter_projectile","path":"sprites/spr_shooter_projectile/spr_shooter_projectile.yy",},},
+    {"id":{"name":"spr_skull","path":"sprites/spr_skull/spr_skull.yy",},},
     {"id":{"name":"spr_spark_green","path":"sprites/spr_spark_green/spr_spark_green.yy",},},
     {"id":{"name":"spr_spark_pink","path":"sprites/spr_spark_pink/spr_spark_pink.yy",},},
     {"id":{"name":"spr_spark_red","path":"sprites/spr_spark_red/spr_spark_red.yy",},},
