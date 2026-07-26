@@ -63,5 +63,6 @@ alarm[0] = 1
 
 // for counting the frames
 stepsHead = 0;
+stepsBeam = 0;
 
 

@@ -45,6 +45,7 @@
   "name":"GMTK2026GameJam",
   "resources":[
     {"id":{"name":"TodoList","path":"notes/TodoList/TodoList.yy",},},
+    {"id":{"name":"Obj_AudioManager","path":"objects/Obj_AudioManager/Obj_AudioManager.yy",},},
     {"id":{"name":"Obj_Bulk","path":"objects/Obj_Bulk/Obj_Bulk.yy",},},
     {"id":{"name":"Obj_Bullet","path":"objects/Obj_Bullet/Obj_Bullet.yy",},},
     {"id":{"name":"obj_bulletExample","path":"objects/obj_bulletExample/obj_bulletExample.yy",},},

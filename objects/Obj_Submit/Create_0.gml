@@ -19,6 +19,7 @@ button_do = function() {
 		
 		submitScore(charString, playerScore)
 		showScores = true
+		playerScore = 0
 		room_restart()
 	}
 }

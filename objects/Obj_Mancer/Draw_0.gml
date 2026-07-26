@@ -5,8 +5,8 @@ if instance_exists(targetAlly) {
 	var dirToTarget1 = point_direction(x,y,targetAlly.x,targetAlly.y);
 
 	for(var i = disToTarget1 - 8; i > 0; i -= 8){
-		var trueX = x + lengthdir_x(i + steps/2 - 4,dirToTarget1);
-		var trueY = y + lengthdir_y(i + steps/2 - 4,dirToTarget1);
+		var trueX = x + lengthdir_x(i + stepsBeam/2 - 4,dirToTarget1);
+		var trueY = y + lengthdir_y(i + stepsBeam/2 - 4,dirToTarget1);
 		draw_sprite_ext(spr_mancer_wave,0,trueX,trueY,1,1,dirToTarget1,#FFFFFF,1);
 	}
 }

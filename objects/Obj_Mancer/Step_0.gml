@@ -1,5 +1,25 @@
 if targetAlly == noone { event_inherited();	exit }
 
+if beingDrained {
+	if(steps % 8 = 0)
+		scr_particleSapping()
+}
+
+
+if beingBuffed {
+	// spawning particles
+
+	// if it's divisible by 6
+	if(steps % 18 = 0){
+		scr_ParticleGenerationAlt(x - 8 + round(random(16)),y - 6 + round(random(12)),"Cursor",1.5,90,0,40,3,1);
+	}
+
+	// if divisible by 14
+	if(steps % 42 = 0){
+		scr_ParticleGenerationAlt(x - 8 + round(random(16)),y - 6 + round(random(12)),"Cursor",1.5,90,0,40,3,1);
+	}
+
+}
 
 if (!instance_exists(targetAlly)) {
 	decideTarget()
@@ -40,3 +60,6 @@ if(!beingDrained){
 
 stepsHead++;
 if(stepsHead > 32){stepsHead -= 32}
+
+stepsBeam++
+if(stepsBeam > 32){stepsBeam -= 32}
