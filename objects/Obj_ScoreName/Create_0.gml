@@ -8,11 +8,13 @@ spriteSize = sprite_get_number(fnt_4by4)
 image_xscale = 4
 image_yscale = 4
 button_do = function() {
+	Obj_AudioManager.playAudio(Sound.button1)
 	index++
 	if index >= spriteSize
 		index -= spriteSize
 }
 button_do_alt = function() {
+	Obj_AudioManager.playAudio(Sound.button1)
 	index--
 	if index < 0 {
 		index += spriteSize

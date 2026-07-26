@@ -17,6 +17,9 @@ function BleedDamage(damage) {
 }
 
 function Die() {
+	Obj_AudioManager.playAudio(Sound.playerDeath1)
+	Obj_AudioManager.playAudio(Sound.playerDeath2)
+	
 	alive = false
 	
 	scr_enemyDeath("player")

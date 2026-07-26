@@ -2,20 +2,28 @@ gameVolume = 80;
 
 enum Sound {
 	Shooting,
-	enemyDeath,
+	enemyDeath1,
+	enemyDeath2,
+	enemyDeath3,
 	chaserDeath,
-	playerDeath,
-	uiButtons,
-	takingDamage,
+	playerDeath1,
+	playerDeath2,
+	enemyHit,
+	button1,
+	button2,
 }
 
 sounds = [
-	0,
-	0,
-	0,
-	0,
-	0,
-	0
+	Snd_Shooting,
+	Snd_EnemyDeath1,
+	Snd_EnemyDeath2,
+	Snd_EnemyDeath3,
+	Snd_ChaserDeath,
+	Snd_PlayerDeath1,
+	Snd_PlayerDeath2,
+	Snd_EnemyHit,
+	Snd_Button1,
+	Snd_Button2,
 ]
 
 playAudio = function(soundIndex, pitch = 1) {

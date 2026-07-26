@@ -2,6 +2,8 @@ var enemy = instance_place(x, y, Obj_Enemy)
 if enemy != noone {
 	var damageDealt = damage
 	if enemy.beingBuffed { damageDealt *= 0.1 }
+	
+	Obj_AudioManager.playAudio(Sound.enemyHit)
 		
 	enemy.hp -= damageDealt
 	

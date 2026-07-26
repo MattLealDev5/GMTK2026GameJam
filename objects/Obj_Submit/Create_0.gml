@@ -2,6 +2,7 @@ event_inherited()
 
 buttonSprite = buttonstupid
 button_do = function() {
+	Obj_AudioManager.playAudio(Sound.button2)
 	with Obj_ScoreManager {
 		var chars = [0, 0, 0]
 		with Obj_ScoreName {
