@@ -62,9 +62,9 @@ if drainToggle {
 if enemyDraining != noone {
 	if drainTimer > 0 { drainTimer--; }
 	if drainTimer <= 0 {
-		var amount = !enemyDraining.beingBuffed ? 1 : 0
-		enemyDraining.hp -= amount
-		GetHeal(drainAmount)
+		var amount = enemyDraining.beingBuffed ? 0.1 : 1
+		enemyDraining.hp -= drainAmount*amount
+		GetHeal(drainAmount*amount)
 		if enemyDraining.hp <= 0 {
 			EnemyDeath(enemyDraining)
 			enemyDraining = noone
